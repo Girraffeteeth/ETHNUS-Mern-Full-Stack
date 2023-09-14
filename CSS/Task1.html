@@ -4,55 +4,48 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
+    
         table {
-            width: 100%;
-            border-collapse: collapse;
-            border: 2px solid black;
-            border-radius: 20px;
-            overflow: hidden;
-        }
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0.25; /* Adjust this value to control the gap between columns */
+    border: 4px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
 
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: none;
-            background-color: #96D4D4;
-        }
+       th, td {
+       padding: 1px;
+       text-align: left;
+       border: none;
+        background-color: #96D4D4;
+}
+
 
         th {
-            background-color: #96D4D4;
+        background-color: #96D4D4;
         }
 
         th span, td span {
-            border: 1px solid black;
-            border-radius: 20px;
-            display: inline-block;
-            padding: 10px;
-        }
+        display: block;
+        width: 90%;
+        height: 80%;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 4px;
+}
+
 
         .shape-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
-            margin-top: 10px;
-        }
-
-        .shape {
-            width: 100px;
-            height: 100px;
-            background-color: #F2C14E;
-            border: 2px solid black;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            font-size: 20px;
+            margin-top: 50px;
         }
 
         .rectangle {
-            width: 150px;
-            height: 100px;
+            width: 100px;
+            height: 80px;
             border: 3px solid rgb(113, 232, 113);
             border-radius: 10px; /* Rounded corners for the rectangle */
             display: flex;
@@ -63,8 +56,8 @@
         }
 
         .rectangle2 {
-            width: 150px;
-            height: 100px;
+            width: 100px;
+            height: 80px;
             border: 3px solid rgb(113, 232, 113);
             border-radius: 30px; /* Rounded corners for the rectangle */
             display: flex;
@@ -75,8 +68,8 @@
         }
 
         .rectangle3 {
-            width: 150px;
-            height: 100px;
+            width: 100px;
+            height: 80px;
             border: 3px solid rgb(113, 232, 113);
             border-radius: 0px; /* Rounded corners for the rectangle */
             display: flex;
@@ -87,8 +80,8 @@
         }
 
         .oval {
-            width: 30%; /* Adjust the width percentage as needed */
-            height: 100px;
+            width: 20%; /* Adjust the width percentage as needed */
+            height: 80px;
             border: 3px solid rgb(113, 232, 113);
             border-radius: 50%; /* Create an oval shape */
             display: flex;
@@ -99,8 +92,8 @@
         }
 
         .custom-shape {
-            width: 150px;
-            height: 100px;
+            width: 100px;
+            height: 80px;
             border: 3px solid rgb(113, 232, 113);
             border-radius: 0 20px 0 20px; /* Apply border-radius to individual corners */
             display: flex;
