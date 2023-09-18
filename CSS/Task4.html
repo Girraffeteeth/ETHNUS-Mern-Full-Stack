@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 4 - CSS</title>
-    <!-- <link rel="stylesheet" href="styles4.css"> -->
     <style>
-        .container {
+        .container 
+        {
             border: 1px solid black;
             margin-left: 20%;
             margin-right: 40%;
@@ -15,68 +13,98 @@
             justify-content: left;
         }
 
-        .contain {
+        .contain 
+        {
             padding-left: 20px;
             padding-right: 20px;
             float: right;
+            margin-bottom: 40px;
         }
 
-        .green {
+        .contain h2
+        {
+            font-size: 20px;
+        }
+
+        .contain p
+        {
+            font-size: 12px;
+        }
+
+        .green 
+        {
             margin-right: 10px;
             margin-top: 25px;
             margin-bottom: 10px;
             height: 50px;
             width: 50px;
+            background-color: transparent;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
             background-color: green;
             transition: transform 1s;
         }
 
-        .blue {
+        .blue 
+        {
             margin-right: 10px;
             margin-bottom: 10px;
             height: 50px;
             width: 50px;
+            background-color: transparent;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
             background-color: blue;
             transition: transform 1s;
         }
 
-        .red {
+        .red 
+        {
             margin-right: 10px;
             margin-bottom: 10px;
             height: 50px;
             width: 50px;
-            transition: transform 1s;
+            background-color: transparent;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
             background-color: red;
+            transition: transform 1s;
         }
 
-        .grey {
+        .grey 
+        {
             margin-right: 10px;
-            margin-bottom: 80px;
+            margin-bottom: 150px;
             height: 50px;
             width: 50px;
-            transition: transform 1s;
+            background-color: transparent;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
             background-color: grey;
+            transition: transform 1s;
         }
 
-        .green:hover {
+        .green:hover
+        {
             transform: scale(1.25);
         }
 
-        .blue:hover {
+        .blue:hover
+        {
             transform: scale(1.25);
         }
 
-        .red:hover {
+        .red:hover
+        {
             transform: scale(1.25);
         }
 
-        .grey:hover {
+        .grey:hover
+        {
             transform: scale(1.25);
         }
     </style>
 </head>
-
-
 <body>
     <div class="container">
         <div class="nav">
@@ -87,9 +115,8 @@
         </div>
         <div class="contain">
             <h2>Hoverable Sidenav Buttons</h2>
-            <p>Hover over buttons in the left side navigation to open them</p>
+            <p>Hover over the buttons in the left side navigation to open them.</p>
         </div>
     </div>
 </body>
-
 </html>
