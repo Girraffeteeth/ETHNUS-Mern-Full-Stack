@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Current Date and Time</title>
+</head>
+<body>
+    <button id="showDateButton">Show Date</button>
+    <button id="showTimeButton">Show Time</button>
+    <p id="dateTimeDisplay"></p>
+
+    <script>
+        function getCurrentDateTime() {
+            const currentDateTime = new Date();
+
+            // Format date
+            const day = String(currentDateTime.getDate()).padStart(2, '0');
+            const month = String(currentDateTime.getMonth() + 1).padStart(2, '0'); // Month is zero-based
+            const year = currentDateTime.getFullYear();
+
+            // Format time
+            const hours = String(currentDateTime.getHours()).padStart(2, '0');
+            const minutes = String(currentDateTime.getMinutes()).padStart(2, '0');
+            const seconds = String(currentDateTime.getSeconds()).padStart(2, '0');
+
+            // Get day and month names
+            const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            const dayName = daysOfWeek[currentDateTime.getDay()];
+            const monthName = months[currentDateTime.getMonth()];
+
+            // Format GMT time
+            const gmtTime = currentDateTime.toGMTString();
+
+            return `${dayName} ${monthName} ${day} ${year} ${hours}:${minutes}:${seconds} GMT ${gmtTime}`;
+        }
+
+        function showCurrentDate() {
+            const formattedDate = getCurrentDateTime();
+            const dateTimeDisplay = document.getElementById("dateTimeDisplay");
+            dateTimeDisplay.textContent = `Current Date and Time: ${formattedDate}`;
+        }
+
+        const showDateButton = document.getElementById("showDateButton");
+        showDateButton.addEventListener("click", showCurrentDate);
+
+        const showTimeButton = document.getElementById("showTimeButton");
+        showTimeButton.addEventListener("click", showCurrentDate);
+    </script>
+</body>
+</html>
